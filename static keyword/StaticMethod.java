@@ -5,7 +5,6 @@ class StaticExample {
     }
 }
 public class StaticMethod {
-
     public static void main(String[] args) {
         StaticExample.method1();  // static method is part of class rather than an instance of that class.
     }
