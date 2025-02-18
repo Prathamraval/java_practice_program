@@ -10,7 +10,7 @@ class Base {
 }
 
 class Derived extends Base {
-    public void m1() throws FileNotFoundException { // only can be sub excepiton of base class
+    public void m1() throws FileNotFoundException { // only can be sub exception of base class
         System.out.println("Derived: m1()");
         throw new FileNotFoundException();
     }
@@ -21,7 +21,7 @@ public class ThrowsExampleWithOverriding {
         Base obj = new Derived();
 
         try {
-            obj.m1();
+        	obj.m1();
         }
         catch(IOException e){
             System.out.println("this is ioexception");
